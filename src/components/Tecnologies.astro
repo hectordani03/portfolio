@@ -1,0 +1,20 @@
+---
+import TecnologiesFrontend from "./TecnologiesFrontend.astro"
+import TecnologiesBackend from "./TecnologiesBackend.astro"
+import TecnologiesTools from "./TecnologiesTools.astro"
+---
+
+<section id="skills" class="section mt-10 flex flex-col items-center">
+    <div class="flex gap-4 items-center justify-center">
+        <svg class="text-4xl font-bold" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#ffffff" d="m.586 12l4.95-4.95L6.95 8.464L3.414 12l3.536 3.536l-1.414 1.414zm8.201 8.728l4.486-17.94l1.94.485l-4.485 17.94zm8.263-5.192L20.586 12L17.05 8.464l1.415-1.414l4.95 4.95l-4.95 4.95z"/></svg>
+        <h1 class="text-4xl font-bold">Skills</h1>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 grid-flow-rows gap-4 sm:w-11/12 md:w-8/12 lg:w-6/12 xl:w-5/12">
+        <TecnologiesFrontend />
+        <TecnologiesBackend />
+    </div>
+    <div class="w-84 sm:w-9/12 lg:w-6/12 xl:w-5/12">
+        <TecnologiesTools />
+    </div>
+    
+</section>

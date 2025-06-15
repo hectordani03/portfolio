@@ -1,0 +1,31 @@
+<section class="flex flex-col items-center mt-10 bg-linear-to-t from-neutral-800 to-transparent w-full">
+     <div class="flex gap-4 items-center">
+        <svg class="text-4xl" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#ffffff" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7l8-5V6l-8 5l-8-5v2z"/></svg>
+        <h1 class="text-4xl font-bold">Get in touch</h1>
+    </div>
+    <div class="w-full mt-8 space-y-6 p-6 rounded-2xl flex gap-8 items-center justify-center">
+      <form action="https://formspree.io/f/tu-id-aqui" method="POST" class="w-6/12 space-y-6 p-6 rounded-2xl shadow-lg backdrop-blur-md">
+        <div>
+          <label for="name" class="block text-white font-semibold mb-1">Nombre</label>
+          <input type="text" id="name" name="name" required class="w-full p-3 rounded-xl bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        
+        <div>
+          <label for="email" class="block text-white font-semibold mb-1">Correo electrónico</label>
+          <input type="email" id="email" name="email" required class="w-full p-3 rounded-xl bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        
+        <div>
+          <label for="message" class="block text-white font-semibold mb-1">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required class="w-full p-3 rounded-xl bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 transition-colors text-white font-semibold py-3 rounded-xl shadow-md">
+          Enviar mensaje
+        </button>
+      </form>
+      <img class="w-5/12 h-auto md:mr-10" src="/public/contact-image.png" alt="">
+    </div>
+
+
+</section>

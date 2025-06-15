@@ -1,0 +1,65 @@
+---
+import ProjectCard from "./ProjectCard.astro"
+import ProjectCardLarge from "./ProjectCardLarge.astro"
+import moonwave from "../data/moonwave"
+import devdesignstudio from "../data/devdesignstudio"
+import sportx from "../data/sportx"
+import asegurate from "../data/asegurate"
+import reuc from "../data/reuc"
+---
+
+<section id="projects" class="section flex flex-col items-center justify-center mt-10">
+    <div class="flex gap-4 items-center justify-center">
+        <svg class="text-4xl font-bold" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#ffffff" d="m.586 12l4.95-4.95L6.95 8.464L3.414 12l3.536 3.536l-1.414 1.414zm8.201 8.728l4.486-17.94l1.94.485l-4.485 17.94zm8.263-5.192L20.586 12L17.05 8.464l1.415-1.414l4.95 4.95l-4.95 4.95z"/></svg>
+        <h1 class="text-4xl font-bold">Projects</h1>
+    </div>
+    <ProjectCardLarge /> 
+    <div class="grid grid-cols-1 md:grid-cols-2 grid-flow-rows gap-x-3 gap-y-3">
+        <ProjectCard 
+            image="/public/project-2.png"
+            title="Moonwave | Clothing Brand Landing Page"
+            description="Landing page for a software solutions company. Designed to present services, case studies, and a contact form. Emphasized clean UI, clarity, and brand personality."
+            previewUrl=""
+            githubUrl="https://github.com/midudev/adventjs"
+            techs={moonwave}
+            showPreview={true}
+            showRepo={false}
+
+        />
+        <ProjectCard 
+            image="/public/project-3.png"
+            title="DevDesignStudio | Software Agency Website"
+            description="Landing page for a software solutions company. Designed to present services, case studies, and a contact form. Emphasized clean UI, clarity, and brand personality."
+            previewUrl="https://devdstudio.vercel.app/"
+            githubUrl="https://github.com/hectordani03/DevDesignStudio.git"
+            techs={devdesignstudio}
+        />
+        <ProjectCard 
+            image="/public/project-5.png"
+            title="SportX | Sports Warehouse Management"
+            description="Inventory management software tailored for a sports warehouse. Includes product control, user roles, and real-time stock tracking."
+            previewUrl="https://adventjs.dev"
+            githubUrl="https://github.com/hectordani03/SportX.git"
+            techs={sportx}
+            showPreview={false}
+        />
+        <ProjectCard 
+        image="/public/project-6.png"
+        title="AseguraTe | Mobile App"
+        description="A mobile educational app designed for managing, tracking, and learning about insurance policies. Users can explore educational content, track their policies, and access support tools."
+        previewUrl="https://adventjs.dev"
+        githubUrl="https://github.com/hectordani03/Inzure.git"
+        techs={asegurate}
+        showPreview={false}
+        />
+        <ProjectCard 
+            image="/public/project-4.png"
+            title="ReUC | Problem Management System"
+            description="A repository platform for tracking, managing, and resolving challenges in the production sector. Built to support efficient documentation and team collaboration."
+            previewUrl="https://adventjs.dev"
+            githubUrl="https://github.com/midudev/adventjs"
+            techs={reuc}
+            show={false}
+        />
+    </div>
+</section>

@@ -1,0 +1,63 @@
+<section id="about-me" class="section flex flex-col items-center mt-10 px-4 py-8">
+    <!-- Section Header -->
+    <div class="flex gap-3 sm:gap-4 items-center mt-6 sm:mt-10">
+        <svg class="text-4xl flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <path fill="#ffffff" d="M7 23q-.825 0-1.412-.587T5 21V3q0-.825.588-1.412T7 1h10q.825 0 1.413.588T19 3v18q0 .825-.587 1.413T17 23zm5-9q1.35 0 2.613.313T17 15.2V6H7v9.2q1.125-.575 2.388-.887T12 14m0-1q-1.25 0-2.125-.875T9 10t.875-2.125T12 7t2.125.875T15 10t-.875 2.125T12 13"/>
+        </svg>
+        <h1 class="text-4xl font-bold">About me</h1>
+
+    </div>
+    
+    <!-- Main Content -->
+    <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 mt-6 sm:mt-8 w-full max-w-6xl">
+        <!-- Avatar Image -->
+        <div class="flex-shrink-0 order-1 lg:order-1">
+            <img class="w-64 h-auto sm:w-72 md:w-80 lg:w-72 xl:w-80 rounded-lg" 
+                 src="/public/portfolio-avatar-2.png" 
+                 alt="Hector's About Me Avatar">
+        </div>
+        
+        <!-- Text Content -->
+        <div class="flex flex-col gap-5 order-2 lg:order-2 text-center lg:text-left w-8/12 lg:flex-1  mx-auto">
+            <!-- Paragraphs -->
+            <div class="flex flex-col gap-4 lg:gap-5">
+                <p class="leading-6 sm:leading-7 text-sm sm:text-base md:text-lg max-w-2xl lg:max-w-none">
+                    I'm a frontend developer based in Mexico 🇲🇽, currently in my final year of Software Engineering studies. I focus on building modern and high-performance user interfaces.
+                </p>
+                <p class="leading-6 sm:leading-7 text-sm sm:text-base md:text-lg max-w-2xl lg:max-w-none">
+                    I specialize in creating clean, responsive, and user-friendly web experiences using React, Tailwind CSS, and UI/UX best practices. I enjoy transforming complex ideas into intuitive designs that work across all devices.
+                </p>
+                <p class="leading-6 sm:leading-7 text-sm sm:text-base md:text-lg max-w-2xl lg:max-w-none">
+                    Outside of coding, I constantly explore new tools, design trends, and frontend workflows to stay sharp and keep improving. My goal is to contribute to meaningful digital products that people enjoy using.
+                </p>
+            </div>
+            
+            <!-- CV Section -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 mt-4 w-full">
+                <!-- CV Button -->
+                <a href="/public/CV.pdf" target="_blank" 
+                   class="relative z-10 px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-neutral-700 to-neutral-800 flex justify-center items-center gap-2 text-sm sm:text-base md:text-base text-white hover:text-black transition-colors duration-700 border-2 border-neutral-700 rounded-xl shadow-xl overflow-hidden font-semibold backdrop-blur-md group cursor-pointer w-8/12 sm:w-auto min-w-[160px]">
+                    <svg class="text-white group-hover:text-black transition-colors duration-700 w-5 h-5 flex-shrink-0" 
+                         xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                        <g fill="currentColor">
+                            <path d="M7.8 6.35c.56 0 1.01-.45 1.01-1.01S8.36 4.33 7.8 4.33s-1.01.45-1.01 1.01s.45 1.01 1.01 1.01"/>
+                            <path fill-rule="evenodd" d="M9.83 8.55c0-1.08-.91-1.86-2.03-1.86s-2.03.78-2.03 1.86v.51c0 .09.04.18.1.24s.15.1.24.1h3.38c.09 0 .18-.04.24-.1s.1-.15.1-.24zM5.75 11.5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75m0 3a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M2.5 2.5c0-1.102.898-2 2-2h6.69c.562 0 1.092.238 1.465.631l.006.007l4.312 4.702c.359.383.527.884.527 1.36v10.3c0 1.102-.898 2-2 2h-11c-1.102 0-2-.898-2-2zm8.689 0H4.5v15h11V7.192l-4.296-4.685l-.003-.001z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M11.19.5a1 1 0 0 1 1 1v4.7h4.31a1 1 0 1 1 0 2h-5.31a1 1 0 0 1-1-1V1.5a1 1 0 0 1 1-1" clip-rule="evenodd"/>
+                        </g>
+                    </svg>
+                    <span class="whitespace-nowrap">Curriculum</span>
+                    <span class="absolute inset-0 -z-10 before:content-[''] before:absolute before:inset-y-0 before:left-[-100%] before:w-full before:rounded-full before:bg-white before:transition-all before:duration-700 group-hover:before:left-0 group-hover:before:scale-200"></span>
+                </a>
+
+                <!-- Download Icon -->
+                <a href="/public/cv.pdf" download 
+                   class="text-white hover:text-gray-300 transition-colors duration-300 hover:scale-110 transform p-2 rounded-lg hover:bg-neutral-800/50">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="#ffffff" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
